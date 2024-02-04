@@ -90,7 +90,7 @@ body {
 }
 
 .imagem-perfil {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .digitando::after {
@@ -98,6 +98,10 @@ body {
     margin-left: 5px;
     opacity: 1;
     animation: pisca .5s infinite;
+}
+
+.titulo-aprensentacao {
+    margin-bottom: -2rem;
 }
 
 @keyframes pisca {
