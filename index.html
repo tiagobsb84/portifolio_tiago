@@ -8,29 +8,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="cabecalho">
-        <h1 class="titulo-cabecalho">Dev <span>Tiago Silva</span></h1>
-        <nav>
-            <ul class="lista-navegacao-principal">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portifolio">Portifólio</a></li>
-                <li><a href="#contact">Contato</a></li>
-                <li><a href="#principal">Principal</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section aria-label="seção curriculo download Tiago" class="secao-apresentacao-curriculo">
-        <div class="box-apresentacao-curriculo">
-            <h2 class="titulo-aprensentacao">Olá! Eu sou,</h2>
-            <h2 class="digitando">Desenvolvedor FullStack | Java | ReactJS</h2>
-            <p>Sou um Desenvolvedor Back-end com conhecimento em Java e NodeJS e Front-end com ReactJS, apaixonado por transformar ideias em realidade, combinando habilidades técnicas e criatividade. Estou sempre em busca de novas oportunidades para aperfeiçoar minhas habilidades e trabalhar em projetos desafiadores. <br>Formador em Análise e Desenvolvimento de Sistemas.</p>
-            <a href="#">Download</a>
-        </div>
-        <img class="imagem-perfil" src="./image/tiagoFoto.png" alt="foto do Tiago">
-    </section>
-    <main>
+    <div class="tela-apresentacao">
+        <header class="cabecalho">
+            <h1 class="titulo-cabecalho">Dev <span>Tiago</span></h1>
+            <nav>
+                <ul class="lista-navegacao-principal">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#principal">Principal</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section aria-label="seção curriculo download Tiago" class="secao-apresentacao-curriculo">
+            <div class="box-apresentacao-curriculo">
+                <h2 class="titulo-aprensentacao">Olá! Eu sou,</h2>
+                <h2 class="digitando">Desenvolvedor <span class="aparece_skill"></span></h2>
+                <a href="#">Download</a>
+            </div>
+            <img class="imagem-perfil" src="./img/imagem home.jpg" alt="imagem de homem em frente computador">
+        </section>
+    </div>
+    <!--<main class="secao-apresentacao">
         <article aria-label="seção sobre mim" class="sobre">
             <div class="sobre-titulo">
                 <h1>Sobre Mim</h1>
@@ -68,7 +69,7 @@
                 </div>
             </div>
         </article>
-    </main>
+    </main>-->
 
     <script src="./js/script.js"></script>
 </body>
