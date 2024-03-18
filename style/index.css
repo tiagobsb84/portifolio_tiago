@@ -10,7 +10,6 @@
 
 body {
     margin: 0 auto;
-
     background-color: #000;
 }
 
@@ -18,14 +17,8 @@ body {
 
 .tela-apresentacao {
     height: 100vh;
-    width: 100vw;
-
     display: flex;
     align-items: center;
-}
-
-.aparece_skill {
-    opacity: 0;
 }
 
 .cabecalho {
@@ -102,6 +95,8 @@ body {
     align-self: start;
     display: grid;
     gap: 30px;
+
+    transition: .3s;
 }
 
 .box-apresentacao-curriculo h2 {
@@ -122,6 +117,11 @@ body {
     padding: 15px 40px;
     border-radius: 5px;
     border: 2px solid #fff;
+}
+
+.download_curriculo:hover {
+    opacity: 0.5;
+    background-color: #413e3e;
 }
 
 .imagem-perfil {
@@ -170,12 +170,15 @@ body {
 }
 
 main .sobre {
-    margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
     padding: 40px;
+    background-color: #111111;
+    width: 80%;
+    margin: 0 auto;
+
 }
 
 .sobre-titulo {
