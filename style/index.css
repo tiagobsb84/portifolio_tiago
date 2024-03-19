@@ -8,15 +8,14 @@
     text-decoration: none;
 }
 
-body {
-    margin: 0 auto;
+body {  
     background-color: #000;
 }
 
 /* CABEÇALHO */
 
 .tela-apresentacao {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -25,6 +24,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 2;
+    height: 3rem;
 
     background-color: #413e3e;
     padding: 10px;
@@ -47,14 +47,14 @@ body {
 
 .lista-navegacao-principal {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 
 .lista-navegacao-principal li a {
     color: #fff;
     padding: 10px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 
     position: relative;
 }
@@ -81,20 +81,19 @@ body {
     animation: inicializar .7s forwards;
 
     background-color: #000;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    gap: 60px;
-    padding: 60px;
+    gap: 100px;
+    display: flex;
     margin: 0 auto;
+    align-items: center;
 }
 
 .box-apresentacao-curriculo {
-    margin-top: 120px;
     align-self: start;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
+    align-items: center;
+    margin: 0 auto;
 
     transition: .3s;
 }
@@ -164,21 +163,86 @@ body {
 
 /* SEÇÃO PRINCIPAL SOBRE MIM */
 
-.secao-apresentacao {
-    background-color: #111;
-    color: white;
+.sobre-mim {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
-main .sobre {
+.secao-sobre-conteudo {
+    width: 70%;
+
+    margin: 0 auto;
+}
+
+.sobre-titulo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-titulo h1 {
+    font-size: 2.5rem;
+    color: #ff5d56;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.sobre-titulo p {
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.imagem-conteudo-sobre-mim {
+    display: flex;
+    gap: 30px;
+}
+
+.foto-sobre-mim {
+    width: 40%;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.sobre-texto h1 {
+    font-size: 2.3rem;
+    color: #fff;
+
+    margin-bottom: 1rem;
+}
+
+.sobre-texto p {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.sobre-info i {
+    color: #dc3545;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 1.5rem;
+    margin-top: .7rem;
+}
+
+/*main .sobre {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     justify-content: center;
     padding: 40px;
-    background-color: #111111;
+    
     width: 80%;
     margin: 0 auto;
-
 }
 
 .sobre-titulo {
@@ -309,4 +373,55 @@ main .sobre {
         transform: translate3d(0, 0, 0);
     }
     
+}*/
+
+/* SEÇÃO CONHECIMENTOS */
+.conhecimentos {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-conhecimentos h1 {
+    font-size: 2.5rem;
+    color: #ff5d56;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+}
+
+.lista-card-icon { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.card-icon {
+    width: 200px;
+    height: 200px;
+    background-color: #dc3545;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.card-icon i {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.card-icon span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
 }
