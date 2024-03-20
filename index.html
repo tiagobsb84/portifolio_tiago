@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
-    <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
     <div class="tela-apresentacao" id="home">
@@ -16,7 +21,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#sobre-mim">Sobre</a></li>
                     <li><a href="#conhecimentos">Conhecimentos</a></li>
-                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
                     <li><a href="#principal">Principal</a></li>
                 </ul>
@@ -67,8 +72,8 @@
             </div>
         </article>
     </div>
-    <div class="conhecimentos">
-        <article aria-label="seção sobre meus conhecimentos" id="conhecimentos">
+    <div class="conhecimentos" id="conhecimentos">
+        <article aria-label="seção sobre meus conhecimentos">
             <div class="sobre-conhecimentos">
                 <h1>Conhecimentos</h1>
             </div>
@@ -119,6 +124,113 @@
             </div>
         </article>
     </div>
+    <div class="projetos" id="projetos">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/img1.webp" alt="imagem1" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Projeto A</h2>
+                            <p class="description">the lorem text the section that contains header with having open functionatity. Lorem dolor sit amet</p>
+                        
+                            <button class="button">PHP</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/img2.webp" alt="imagem1" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Projeto A</h2>
+                            <p class="description">the lorem text the section that contains header with having open functionatity. Lorem dolor sit amet</p>
+                        
+                            <button class="button">PHP</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/img3.webp" alt="imagem1" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Projeto A</h2>
+                            <p class="description">the lorem text the section that contains header with having open functionatity. Lorem dolor sit amet</p>
+                        
+                            <button class="button">PHP</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/img4.webp" alt="imagem1" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Projeto A</h2>
+                            <p class="description">the lorem text the section that contains header with having open functionatity. Lorem dolor sit amet</p>
+                        
+                            <button class="button">PHP</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/img2.webp" alt="imagem1" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Projeto A</h2>
+                            <p class="description">the lorem text the section that contains header with having open functionatity. Lorem dolor sit amet</p>
+                        
+                            <button class="button">PHP</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/img1.webp" alt="imagem1" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Projeto A</h2>
+                            <p class="description">the lorem text the section that contains header with having open functionatity. Lorem dolor sit amet</p>
+                        
+                            <button class="button">PHP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>´
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </div>  
+   
+     <!-- Swiper JS -->
+     <script src="js/swiper-bundle.min.js"></script>
+    
+    <!-- JavaScript -->
     <script src="./js/script.js"></script>
-</body>
+</body>/
 </html>
